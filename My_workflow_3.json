@@ -1,0 +1,2743 @@
+{
+  "name": "My workflow 3",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "ad4d22d0-c1a4-461f-acf1-e80381ae41cc",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -1560,
+        260
+      ],
+      "id": "b57e1d29-10e6-4197-8ff6-c0b7ad338677",
+      "name": "Webhook",
+      "webhookId": "ad4d22d0-c1a4-461f-acf1-e80381ae41cc"
+    },
+    {
+      "parameters": {
+        "operation": "create",
+        "base": {
+          "__rl": true,
+          "value": "appN6DYAYHA5pzPle",
+          "mode": "list",
+          "cachedResultName": "Outbound Call",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tbltlvsStunRHqrxU",
+          "mode": "list",
+          "cachedResultName": "data",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle/tbltlvsStunRHqrxU"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "milliseconds": 0,
+            "cost(stt)": 0,
+            "cost(llm)": 0,
+            "cost(ttm)": 0,
+            "cost(total)": 0,
+            "cost(tiwlio)": 0,
+            "cost(totals)": 0
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "ID",
+              "displayName": "ID",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Call Provided ID",
+              "displayName": "Call Provided ID",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Phone number ID copy",
+              "displayName": "Phone number ID copy",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Customer Id",
+              "displayName": "Customer Id",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "type",
+              "displayName": "type",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "started",
+              "displayName": "started",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "ended",
+              "displayName": "ended",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "milliseconds",
+              "displayName": "milliseconds",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "number",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "cost(stt)",
+              "displayName": "cost(stt)",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "number",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "cost(llm)",
+              "displayName": "cost(llm)",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "number",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "cost(ttm)",
+              "displayName": "cost(ttm)",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "number",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "cost(total)",
+              "displayName": "cost(total)",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "number",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "cost(tiwlio)",
+              "displayName": "cost(tiwlio)",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "number",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "cost(totals)",
+              "displayName": "cost(totals)",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "number",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "ended reason",
+              "displayName": "ended reason",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "transcript",
+              "displayName": "transcript",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "recording",
+              "displayName": "recording",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        -1160,
+        120
+      ],
+      "id": "1b525d58-79bf-493a-9080-7f5dc2277df2",
+      "name": "Raw Data",
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "pvdVjaOVH99tt386",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "base": {
+          "__rl": true,
+          "value": "appN6DYAYHA5pzPle",
+          "mode": "list",
+          "cachedResultName": "Outbound Call",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tbl9Wo2TPVjn9IcmK",
+          "mode": "list",
+          "cachedResultName": "lead",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle/tbl9Wo2TPVjn9IcmK"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $json.id }}",
+            "Status": "Called",
+            "Attempt": "#Success",
+            "Summary": "={{ $('Event = end-of-call-report').item.json.body.message.analysis.summary }}",
+            "Date Time": "={{ $now }}"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": true,
+              "removed": false
+            },
+            {
+              "id": "Date Time",
+              "displayName": "Date Time",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "First Name",
+              "displayName": "First Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Last Name",
+              "displayName": "Last Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Mobile",
+              "displayName": "Mobile",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "In-Progress",
+                  "value": "In-Progress"
+                },
+                {
+                  "name": "Called",
+                  "value": "Called"
+                },
+                {
+                  "name": "Failed",
+                  "value": "Failed"
+                },
+                {
+                  "name": "Voicemail",
+                  "value": "Voicemail"
+                },
+                {
+                  "name": "TBC",
+                  "value": "TBC"
+                }
+              ],
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Attempt",
+              "displayName": "Attempt",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "#Success",
+                  "value": "#Success"
+                },
+                {
+                  "name": "#1",
+                  "value": "#1"
+                },
+                {
+                  "name": "#2",
+                  "value": "#2"
+                },
+                {
+                  "name": "#3",
+                  "value": "#3"
+                }
+              ],
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Summary",
+              "displayName": "Summary",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Assignee",
+              "displayName": "Assignee",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Final Call",
+              "displayName": "Final Call",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        -520,
+        120
+      ],
+      "id": "26d9d5d8-1067-4491-b392-5eae20d0f29a",
+      "name": "Connected Call",
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "pvdVjaOVH99tt386",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "base": {
+          "__rl": true,
+          "value": "appN6DYAYHA5pzPle",
+          "mode": "list",
+          "cachedResultName": "Outbound Call",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tbl9Wo2TPVjn9IcmK",
+          "mode": "list",
+          "cachedResultName": "lead",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle/tbl9Wo2TPVjn9IcmK"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $json.id }}",
+            "Status": "Failed",
+            "Summary": "={{ $('Event = end-of-call-report').item.json.body.message.analysis.summary }}"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": true,
+              "removed": false
+            },
+            {
+              "id": "Date Time",
+              "displayName": "Date Time",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "First Name",
+              "displayName": "First Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Last Name",
+              "displayName": "Last Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Mobile",
+              "displayName": "Mobile",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "In-Progress",
+                  "value": "In-Progress"
+                },
+                {
+                  "name": "Called",
+                  "value": "Called"
+                },
+                {
+                  "name": "Failed",
+                  "value": "Failed"
+                },
+                {
+                  "name": "Voicemail",
+                  "value": "Voicemail"
+                },
+                {
+                  "name": "TBC",
+                  "value": "TBC"
+                }
+              ],
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Attempt",
+              "displayName": "Attempt",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "#Success",
+                  "value": "#Success"
+                },
+                {
+                  "name": "#1",
+                  "value": "#1"
+                },
+                {
+                  "name": "#2",
+                  "value": "#2"
+                },
+                {
+                  "name": "#3",
+                  "value": "#3"
+                }
+              ],
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Summary",
+              "displayName": "Summary",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Assignee",
+              "displayName": "Assignee",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Final Call",
+              "displayName": "Final Call",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        -340,
+        500
+      ],
+      "id": "0ff50445-cfc6-4fb5-8bc0-bdc3a15a08b9",
+      "name": "Failed Call",
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "pvdVjaOVH99tt386",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "base": {
+          "__rl": true,
+          "value": "appN6DYAYHA5pzPle",
+          "mode": "list",
+          "cachedResultName": "Outbound Call",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tbl9Wo2TPVjn9IcmK",
+          "mode": "list",
+          "cachedResultName": "lead",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle/tbl9Wo2TPVjn9IcmK"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $json.id }}",
+            "Status": "Voicemail",
+            "Attempt": "Unreachable",
+            "Summary": "={{ $('Event = end-of-call-report').item.json.body.message.analysis.summary }}",
+            "Date Time": "={{ $now }}"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": true,
+              "removed": false
+            },
+            {
+              "id": "Date Time",
+              "displayName": "Date Time",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "First Name",
+              "displayName": "First Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Last Name",
+              "displayName": "Last Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Mobile",
+              "displayName": "Mobile",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "In-Progress",
+                  "value": "In-Progress"
+                },
+                {
+                  "name": "Called",
+                  "value": "Called"
+                },
+                {
+                  "name": "Failed",
+                  "value": "Failed"
+                },
+                {
+                  "name": "Voicemail",
+                  "value": "Voicemail"
+                },
+                {
+                  "name": "TBC",
+                  "value": "TBC"
+                }
+              ],
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Attempt",
+              "displayName": "Attempt",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "#1",
+                  "value": "#1"
+                },
+                {
+                  "name": "#2",
+                  "value": "#2"
+                },
+                {
+                  "name": "#3",
+                  "value": "#3"
+                },
+                {
+                  "name": "Unreachable",
+                  "value": "Unreachable"
+                },
+                {
+                  "name": "#Success",
+                  "value": "#Success"
+                }
+              ],
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Summary",
+              "displayName": "Summary",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Assignee",
+              "displayName": "Assignee",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Final Call",
+              "displayName": "Final Call",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        180,
+        420
+      ],
+      "id": "3a8ddcea-dde4-45b4-89a6-e01c4eed775d",
+      "name": "Unreachable",
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "pvdVjaOVH99tt386",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "base": {
+          "__rl": true,
+          "value": "appN6DYAYHA5pzPle",
+          "mode": "list",
+          "cachedResultName": "Outbound Call",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tbl9Wo2TPVjn9IcmK",
+          "mode": "list",
+          "cachedResultName": "lead",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle/tbl9Wo2TPVjn9IcmK"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $('+1 Day AND @ 4:00pm (Optimal Call Time)').item.json.id }}",
+            "Status": "Voicemail",
+            "Attempt": "#3",
+            "Summary": "={{ $('Event = end-of-call-report').item.json.body.message.analysis.summary }}",
+            "Date Time": "={{ $now }}"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": true,
+              "removed": false
+            },
+            {
+              "id": "Date Time",
+              "displayName": "Date Time",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "First Name",
+              "displayName": "First Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Last Name",
+              "displayName": "Last Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Mobile",
+              "displayName": "Mobile",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "In-Progress",
+                  "value": "In-Progress"
+                },
+                {
+                  "name": "Called",
+                  "value": "Called"
+                },
+                {
+                  "name": "Failed",
+                  "value": "Failed"
+                },
+                {
+                  "name": "Voicemail",
+                  "value": "Voicemail"
+                },
+                {
+                  "name": "TBC",
+                  "value": "TBC"
+                }
+              ],
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Attempt",
+              "displayName": "Attempt",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "#Success",
+                  "value": "#Success"
+                },
+                {
+                  "name": "#1",
+                  "value": "#1"
+                },
+                {
+                  "name": "#2",
+                  "value": "#2"
+                },
+                {
+                  "name": "#3",
+                  "value": "#3"
+                }
+              ],
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Summary",
+              "displayName": "Summary",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Assignee",
+              "displayName": "Assignee",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Final Call",
+              "displayName": "Final Call",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        580,
+        220
+      ],
+      "id": "7e5cb410-7347-4875-a9c2-2163fa71f64d",
+      "name": "Voicemail Attempt #3",
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "pvdVjaOVH99tt386",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "base": {
+          "__rl": true,
+          "value": "appN6DYAYHA5pzPle",
+          "mode": "list",
+          "cachedResultName": "Outbound Call",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tbl9Wo2TPVjn9IcmK",
+          "mode": "list",
+          "cachedResultName": "lead",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle/tbl9Wo2TPVjn9IcmK"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $('1 Minute').item.json.id }}",
+            "Status": "Voicemail",
+            "Attempt": "#2",
+            "Summary": "={{ $('Event = end-of-call-report').item.json.body.message.analysis.summary }}",
+            "Date Time": "={{ $now }}"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": true,
+              "removed": false
+            },
+            {
+              "id": "Date Time",
+              "displayName": "Date Time",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "First Name",
+              "displayName": "First Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Last Name",
+              "displayName": "Last Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Mobile",
+              "displayName": "Mobile",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "In-Progress",
+                  "value": "In-Progress"
+                },
+                {
+                  "name": "Called",
+                  "value": "Called"
+                },
+                {
+                  "name": "Failed",
+                  "value": "Failed"
+                },
+                {
+                  "name": "Voicemail",
+                  "value": "Voicemail"
+                },
+                {
+                  "name": "TBC",
+                  "value": "TBC"
+                }
+              ],
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Attempt",
+              "displayName": "Attempt",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "#Success",
+                  "value": "#Success"
+                },
+                {
+                  "name": "#1",
+                  "value": "#1"
+                },
+                {
+                  "name": "#2",
+                  "value": "#2"
+                },
+                {
+                  "name": "#3",
+                  "value": "#3"
+                }
+              ],
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Summary",
+              "displayName": "Summary",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Assignee",
+              "displayName": "Assignee",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Final Call",
+              "displayName": "Final Call",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        580,
+        0
+      ],
+      "id": "241f21bc-03f9-4417-9171-50df37fb2eca",
+      "name": "Voicemail Attempt #2",
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "pvdVjaOVH99tt386",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "87640d60-4973-4256-8e37-e8c7fc3bf1a8",
+              "leftValue": "={{ $json.fields['ended reason'] }}",
+              "rightValue": "customer-did-not-answer",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            },
+            {
+              "id": "7d0759f2-7c19-45be-bbb9-09db3da6eacc",
+              "leftValue": "={{ $json.fields['ended reason'] }}",
+              "rightValue": "assistant-error",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            },
+            {
+              "id": "bcce32ec-9fc1-4f42-b352-69ed90b8b7a6",
+              "leftValue": "={{ $json.fields['ended reason'] }}",
+              "rightValue": "pipeline-error-*",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            },
+            {
+              "id": "fb91210a-c14a-432b-ba6d-3c859d5972a4",
+              "leftValue": "={{ $json.fields['ended reason'] }}",
+              "rightValue": "pipeline-error-first-message-failed",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            },
+            {
+              "id": "9104cca1-09aa-4781-9400-3fa998134595",
+              "leftValue": "={{ $json.fields['ended reason'] }}",
+              "rightValue": "pipeline-no-available-llm-model",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            },
+            {
+              "id": "8717e004-1033-4a34-b827-d16c2d147501",
+              "leftValue": "={{ $json.fields['ended reason'] }}",
+              "rightValue": "phone-call-provider-closed-websocket",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            },
+            {
+              "id": "37a69a1f-b6d7-42ce-b20e-d3a8dbc6df92",
+              "leftValue": "={{ $json.fields['ended reason'] }}",
+              "rightValue": "twilio-failed-to-connect-call",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            },
+            {
+              "id": "52f427ca-adbc-4364-a1c0-81c3b23d26a3",
+              "leftValue": "={{ $json.fields['ended reason'] }}",
+              "rightValue": "unknown-error",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            },
+            {
+              "id": "fad61fe3-b7e5-4bca-be09-f22f89bdeb4a",
+              "leftValue": "={{ $('Event = end-of-call-report').item.json.body.message.analysis.summary }}",
+              "rightValue": "voicemail",
+              "operator": {
+                "type": "string",
+                "operation": "notContains"
+              }
+            },
+            {
+              "id": "7b24dc3c-be9b-4b7a-aa71-83eb0b13b071",
+              "leftValue": "={{ $('Event = end-of-call-report').item.json.body.message.artifact.transcript }}",
+              "rightValue": "leave a message",
+              "operator": {
+                "type": "string",
+                "operation": "notContains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -940,
+        120
+      ],
+      "id": "16a97e85-5e97-4bd4-942d-6241163b9add",
+      "name": "Condition = Answered"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "c3457791-6f2c-4c4f-8e92-d73b65c728bc",
+              "leftValue": "={{ $('Event = end-of-call-report').item.json.body.message.endedReason }}",
+              "rightValue": "voicemail",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            },
+            {
+              "id": "058579be-1c16-45db-abe7-dffdc709b015",
+              "leftValue": "={{ $('Event = end-of-call-report').item.json.body.message.endedReason }}",
+              "rightValue": "customer-busy",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            },
+            {
+              "id": "6252cc6b-aa3f-43e0-9dc6-a497a2f303ee",
+              "leftValue": "={{ $('Event = end-of-call-report').item.json.body.message.endedReason }}",
+              "rightValue": "customer-did-not-answer",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            },
+            {
+              "id": "655fde08-4343-4336-b4ec-3f8a9217b384",
+              "leftValue": "={{ $('Event = end-of-call-report').item.json.body.message.endedReason }}",
+              "rightValue": "customer-ended-call",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -740,
+        320
+      ],
+      "id": "de2a01d2-2960-4940-980d-5562771d3c8e",
+      "name": "Condition = Voicemail"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "23f6dcb0-0cd3-4d53-995e-7bf6f3e981de",
+              "leftValue": "={{ $json.Attempt }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notExists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -340,
+        300
+      ],
+      "id": "9cf8f6d6-b8a8-4888-a79a-b66139a1841b",
+      "name": "First Call"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "5dbf49f4-4e26-4684-b86a-13b11de984fe",
+              "leftValue": "={{ $json.Attempt }}",
+              "rightValue": "#1",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -180,
+        300
+      ],
+      "id": "dc84172d-f590-447d-b24b-533b94c3059c",
+      "name": "First Call - Recapture"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "b9373607-17cb-466f-a492-9a1e52627d26",
+              "leftValue": "={{ $json.Attempt }}",
+              "rightValue": "#2",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        300
+      ],
+      "id": "7c01d2f0-291f-48f8-a2fa-020cc6fa6724",
+      "name": "Third Call"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.vapi.ai/call",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer 61c9f9e0-38b9-4e67-b90a-013b884a444c"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"assistantId\": \"a1a933d7-07c7-416c-a2e0-d4cc987b36d6\",\n  \"customer\": {\n    \"name\": \"{{ $json.fields['First Name'] }}\",\n    \"number\": \"{{ $json.fields.Mobile }}\"\n  },\n  \"phoneNumberId\": \"3eba195f-2c2b-4a61-8441-4c119084c019\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        360,
+        0
+      ],
+      "id": "7397ce89-5d87-4f9f-9a3b-03364eafedcb",
+      "name": "Call #2"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.vapi.ai/call",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer 61c9f9e0-38b9-4e67-b90a-013b884a444c"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"assistantId\": \"a1a933d7-07c7-416c-a2e0-d4cc987b36d6\",\n  \"customer\": {\n    \"name\": \"{{ $json['First Name'] }}\",\n    \"number\": \"{{ $json.Mobile }}\"\n  },\n  \"phoneNumberId\": \"3eba195f-2c2b-4a61-8441-4c119084c019\"\n}",
+        "options": {
+          "batching": {
+            "batch": {
+              "batchSize": 10,
+              "batchInterval": 120000
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        360,
+        220
+      ],
+      "id": "2b04b062-4f1a-44f0-bf17-dda8c1fa5a8c",
+      "name": "Call #3"
+    },
+    {
+      "parameters": {
+        "operation": "search",
+        "base": {
+          "__rl": true,
+          "value": "appN6DYAYHA5pzPle",
+          "mode": "list",
+          "cachedResultName": "Outbound Call",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tbl9Wo2TPVjn9IcmK",
+          "mode": "list",
+          "cachedResultName": "lead",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle/tbl9Wo2TPVjn9IcmK"
+        },
+        "filterByFormula": "=({Mobile} = '{{ $('Event = end-of-call-report').item.json.body.message.call.customer.number }}')",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        -740,
+        120
+      ],
+      "id": "4fdc6402-8bfa-4605-839b-37505bd0e995",
+      "name": "Get ID",
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "pvdVjaOVH99tt386",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "search",
+        "base": {
+          "__rl": true,
+          "value": "appN6DYAYHA5pzPle",
+          "mode": "list",
+          "cachedResultName": "Outbound Call",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tbl9Wo2TPVjn9IcmK",
+          "mode": "list",
+          "cachedResultName": "lead",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle/tbl9Wo2TPVjn9IcmK"
+        },
+        "filterByFormula": "=({Mobile} = '{{ $('Event = end-of-call-report').item.json.body.message.call.customer.number }}')",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        -520,
+        300
+      ],
+      "id": "ee3c695a-2d7b-40c6-8f60-bcb04c798cec",
+      "name": "Get ID #2",
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "pvdVjaOVH99tt386",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "search",
+        "base": {
+          "__rl": true,
+          "value": "appN6DYAYHA5pzPle",
+          "mode": "list",
+          "cachedResultName": "Outbound Call",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tbl9Wo2TPVjn9IcmK",
+          "mode": "list",
+          "cachedResultName": "lead",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle/tbl9Wo2TPVjn9IcmK"
+        },
+        "filterByFormula": "=({Mobile} = '{{ $('Event = end-of-call-report').item.json.body.message.call.customer.number }}')",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        -520,
+        500
+      ],
+      "id": "d7c0aaca-29d6-45ac-a9e8-b3e35f1d76b9",
+      "name": "Get ID #3",
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "pvdVjaOVH99tt386",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "32155059-a744-47e1-879c-f93968fe8a8a",
+              "leftValue": "={{ $json.body.message.type }}",
+              "rightValue": "end-of-call-report",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -1360,
+        260
+      ],
+      "id": "723c4fdd-f562-49a0-aa13-3afc29ef6ada",
+      "name": "Event = end-of-call-report"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "base": {
+          "__rl": true,
+          "value": "appN6DYAYHA5pzPle",
+          "mode": "list",
+          "cachedResultName": "Outbound Call",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tbl9Wo2TPVjn9IcmK",
+          "mode": "list",
+          "cachedResultName": "lead",
+          "cachedResultUrl": "https://airtable.com/appN6DYAYHA5pzPle/tbl9Wo2TPVjn9IcmK"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $json.id }}",
+            "Status": "Voicemail",
+            "Attempt": "#1",
+            "Summary": "={{ $('Event = end-of-call-report').item.json.body.message.analysis.summary }}"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": true,
+              "removed": false
+            },
+            {
+              "id": "Date Time",
+              "displayName": "Date Time",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "First Name",
+              "displayName": "First Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Last Name",
+              "displayName": "Last Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Mobile",
+              "displayName": "Mobile",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "In-Progress",
+                  "value": "In-Progress"
+                },
+                {
+                  "name": "Called",
+                  "value": "Called"
+                },
+                {
+                  "name": "Failed",
+                  "value": "Failed"
+                },
+                {
+                  "name": "Voicemail",
+                  "value": "Voicemail"
+                },
+                {
+                  "name": "TBC",
+                  "value": "TBC"
+                }
+              ],
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Attempt",
+              "displayName": "Attempt",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "#Success",
+                  "value": "#Success"
+                },
+                {
+                  "name": "#1",
+                  "value": "#1"
+                },
+                {
+                  "name": "#2",
+                  "value": "#2"
+                },
+                {
+                  "name": "#3",
+                  "value": "#3"
+                }
+              ],
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Summary",
+              "displayName": "Summary",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Assignee",
+              "displayName": "Assignee",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "Final Call",
+              "displayName": "Final Call",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "2aa41359-8e5f-485d-a1e5-b54a6bc5bc7c",
+      "name": "Voicemail Attempt #1",
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "pvdVjaOVH99tt386",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 1,
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        180,
+        0
+      ],
+      "id": "26c10695-269c-4e62-9e1e-04e3cbf2ce68",
+      "name": "1 Minute",
+      "webhookId": "0c1d989a-b8de-4488-86c5-281db988f5b7"
+    },
+    {
+      "parameters": {
+        "resume": "specificTime",
+        "dateTime": "={{ \n  String(\n    $now.plus(1, \"day\")\n      .toDateTime()\n      .setZone(\"Asia/Kolkata\")\n      .set({ hour: 16, minute: 0, second: 0, millisecond: 0 })\n      .toISO()\n  )\n}}"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        180,
+        220
+      ],
+      "id": "6bd3c4ee-175a-4805-a603-c648a7397f44",
+      "name": "+1 Day AND @ 4:00pm (Optimal Call Time)",
+      "webhookId": "cc3caa32-c6d5-4333-8719-5962749cc0c3"
+    }
+  ],
+  "pinData": {
+    "Webhook": [
+      {
+        "json": {
+          "headers": {
+            "host": "ytj.app.n8n.cloud",
+            "user-agent": "axios/1.7.7",
+            "content-length": "17416",
+            "accept": "application/json, text/plain, */*",
+            "accept-encoding": "gzip, br",
+            "baggage": "sentry-environment=production,sentry-public_key=a0021577936aec367b16615ad816c078,sentry-trace_id=26a4e86ed77546a5b6f6a5a2f6c03db6",
+            "cdn-loop": "cloudflare; loops=1; subreqs=1",
+            "cf-connecting-ip": "54.186.193.37",
+            "cf-ew-via": "15",
+            "cf-ipcountry": "US",
+            "cf-ray": "91f82503a4c1ec48-SEA",
+            "cf-visitor": "{\"scheme\":\"https\"}",
+            "cf-worker": "n8n.cloud",
+            "content-type": "application/json",
+            "cookie": "callId=80870022-d29c-4fae-a835-cd273f557e21",
+            "sentry-trace": "26a4e86ed77546a5b6f6a5a2f6c03db6-9344110a66e6b71b",
+            "traceparent": "00-67d244b300000000029382ce9692f531-029382ce9692f531-01",
+            "tracestate": "dd=t.tid:67d244b300000000;t.dm:-1;s:1;p:029382ce9692f531",
+            "x-datadog-parent-id": "185635833453409585",
+            "x-datadog-sampling-priority": "1",
+            "x-datadog-tags": "_dd.p.tid=67d244b300000000,_dd.p.dm=-1",
+            "x-datadog-trace-id": "185635833453409585",
+            "x-forwarded-for": "54.186.193.37, 172.71.151.106",
+            "x-forwarded-host": "ytj.app.n8n.cloud",
+            "x-forwarded-port": "443",
+            "x-forwarded-proto": "https",
+            "x-forwarded-server": "traefik-prod-users-gwc-38-6f9f659dd9-s7j95",
+            "x-is-trusted": "yes",
+            "x-real-ip": "54.186.193.37",
+            "x-vapi-secret": ""
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "message": {
+              "timestamp": 1741833395597,
+              "type": "end-of-call-report",
+              "analysis": {
+                "summary": "The call was a brief interaction where the AI attempted to speak with Jonas, but was met with an automated voicemail message indicating the person was unavailable and would return the call later.",
+                "successEvaluation": "false"
+              },
+              "artifact": {
+                "messages": [
+                  {
+                    "role": "system",
+                    "message": "# Role\nYou are Sam, you're an expert booking assistant and sales agent aimed at our business.\n\n# Task\n\n## Introduce the call\n- tell the user you're Sam calling from Talk AI, reaching out following their recent interest in ai voice agents. \n\n## Qualify the lead\n- ask why they where interested in reaching out about outbound voice agents.\nwait for response\n- ask what is their anticipated call volume\nwait for response\n- ask what application they are specifically after, for example lead generation, lead qualification and booking. \nwait for response\n- ask their budget\nwait for response, if budget < 3,000 do not offer booking an appointment. If budget > 3,000 offer scheduling an appointment to move forward.\n\n## Book appointment\nwork with the caller to book an appointment into TALK AI's calendar. \n- ask the user what time they prefer to book in an appointment? \n- Use the 'checkCalendarN8N' function to look for availability first.\nwait for api response\n- use the 'bookCalendarN8N' function to finalise booking.\nif booking successful, say \"Thank you for booking with us, you should receive an SMS with the details and meeting link shortly\". \n\n## Closing call\nonce the user has been booked in or they want to finish the call:\n- use the 'endCall' function.\n\n# Specifics\n- Always get the availabilities first before booking\n- use the current time as a reference for checking slots \n- never assume a day or slot is available, always check using the function call.\n- if a requested slot isn't available, and there is available times the following day, explicity say this.\n\n# Context\nYou work at TALK AI, a leading ai development agency. You are qualifying leads via an outbound phone call that have inquired about your services. Are business hours are 9am to 5pm monday to friday. You are in a voice conversation\n\n#Current Time:\ncurrent time: Mar 12, 2025, 10:36 PM\n\n# Notes\n- always steer the conversation back on track using the task and role",
+                    "time": 1741833361494,
+                    "secondsFromStart": 0
+                  },
+                  {
+                    "role": "bot",
+                    "message": "Hello . Am I speaking with Jonas ?",
+                    "time": 1741833366974,
+                    "endTime": 2.37,
+                    "secondsFromStart": 5.479,
+                    "duration": 2.37,
+                    "source": ""
+                  },
+                  {
+                    "role": "user",
+                    "message": "Hello . Thank you for your call today . Please leave a message and we'll get",
+                    "time": 1741833382753,
+                    "endTime": 20.04,
+                    "secondsFromStart": 21.258,
+                    "duration": 5.85
+                  },
+                  {
+                    "role": "bot",
+                    "message": "Do you",
+                    "time": 1741833386715,
+                    "endTime": 20.31,
+                    "secondsFromStart": 25.22,
+                    "duration": 1.7999999999999972,
+                    "source": ""
+                  },
+                  {
+                    "role": "user",
+                    "message": "back to you",
+                    "time": 1741833386716,
+                    "endTime": 20.67,
+                    "secondsFromStart": 25.221,
+                    "duration": 0.6300000000000026
+                  },
+                  {
+                    "role": "bot",
+                    "message": "want to ?",
+                    "time": 1741833387076,
+                    "endTime": 20.52,
+                    "secondsFromStart": 25.581,
+                    "duration": 0.21000000000000085,
+                    "source": ""
+                  },
+                  {
+                    "role": "user",
+                    "message": "as soon as possible .",
+                    "time": 1741833387436,
+                    "endTime": 22.05,
+                    "secondsFromStart": 25.941,
+                    "duration": 1.379999999999999
+                  }
+                ],
+                "messagesOpenAIFormatted": [
+                  {
+                    "role": "system",
+                    "content": "# Role\nYou are Sam, you're an expert booking assistant and sales agent aimed at our business.\n\n# Task\n\n## Introduce the call\n- tell the user you're Sam calling from Talk AI, reaching out following their recent interest in ai voice agents. \n\n## Qualify the lead\n- ask why they where interested in reaching out about outbound voice agents.\nwait for response\n- ask what is their anticipated call volume\nwait for response\n- ask what application they are specifically after, for example lead generation, lead qualification and booking. \nwait for response\n- ask their budget\nwait for response, if budget < 3,000 do not offer booking an appointment. If budget > 3,000 offer scheduling an appointment to move forward.\n\n## Book appointment\nwork with the caller to book an appointment into TALK AI's calendar. \n- ask the user what time they prefer to book in an appointment? \n- Use the 'checkCalendarN8N' function to look for availability first.\nwait for api response\n- use the 'bookCalendarN8N' function to finalise booking.\nif booking successful, say \"Thank you for booking with us, you should receive an SMS with the details and meeting link shortly\". \n\n## Closing call\nonce the user has been booked in or they want to finish the call:\n- use the 'endCall' function.\n\n# Specifics\n- Always get the availabilities first before booking\n- use the current time as a reference for checking slots \n- never assume a day or slot is available, always check using the function call.\n- if a requested slot isn't available, and there is available times the following day, explicity say this.\n\n# Context\nYou work at TALK AI, a leading ai development agency. You are qualifying leads via an outbound phone call that have inquired about your services. Are business hours are 9am to 5pm monday to friday. You are in a voice conversation\n\n#Current Time:\ncurrent time: Mar 12, 2025, 10:36 PM\n\n# Notes\n- always steer the conversation back on track using the task and role"
+                  },
+                  {
+                    "role": "assistant",
+                    "content": "Hello . Am I speaking with Jonas ?"
+                  },
+                  {
+                    "role": "user",
+                    "content": "Hello . Thank you for your call today . Please leave a message and we'll get"
+                  },
+                  {
+                    "role": "assistant",
+                    "content": "Do you"
+                  },
+                  {
+                    "role": "user",
+                    "content": "back to you"
+                  },
+                  {
+                    "role": "assistant",
+                    "content": "want to ?"
+                  },
+                  {
+                    "role": "user",
+                    "content": "as soon as possible ."
+                  }
+                ],
+                "transcript": "AI: Hello . Am I speaking with Jonas ?\nUser: Hello . Thank you for your call today . Please leave a message and we'll get\nAI: Do you\nUser: back to you\nAI: want to ?\nUser: as soon as possible .\n",
+                "recordingUrl": "https://storage.vapi.ai/80870022-d29c-4fae-a835-cd273f557e21-1741833391929-cd30cd17-c5a1-481e-bc52-b39a42608e22-mono.wav",
+                "stereoRecordingUrl": "https://storage.vapi.ai/80870022-d29c-4fae-a835-cd273f557e21-1741833391930-229f671b-1d7b-487a-9656-64d32621f07f-stereo.wav"
+              },
+              "startedAt": "2025-03-13T02:36:01.867Z",
+              "endedAt": "2025-03-13T02:36:29.412Z",
+              "endedReason": "customer-ended-call",
+              "cost": 0.0347,
+              "costBreakdown": {
+                "stt": 0,
+                "llm": 0.0003,
+                "tts": 0.0083,
+                "vapi": 0.023,
+                "total": 0.0347,
+                "llmPromptTokens": 1732,
+                "llmCompletionTokens": 37,
+                "ttsCharacters": 165,
+                "voicemailDetectionCost": 0.0003,
+                "analysisCostBreakdown": {
+                  "summary": 0.0009,
+                  "summaryPromptTokens": 108,
+                  "summaryCompletionTokens": 41,
+                  "structuredData": 0,
+                  "structuredDataPromptTokens": 0,
+                  "structuredDataCompletionTokens": 0,
+                  "successEvaluation": 0.002,
+                  "successEvaluationPromptTokens": 637,
+                  "successEvaluationCompletionTokens": 4
+                }
+              },
+              "costs": [
+                {
+                  "type": "transcriber",
+                  "transcriber": {
+                    "provider": "speechmatics",
+                    "model": "default"
+                  },
+                  "minutes": 0.5574833333333333,
+                  "cost": 0
+                },
+                {
+                  "type": "model",
+                  "model": {
+                    "provider": "openai",
+                    "model": "gpt-4o-mini"
+                  },
+                  "promptTokens": 1732,
+                  "completionTokens": 37,
+                  "cost": 0.000282
+                },
+                {
+                  "type": "voice",
+                  "voice": {
+                    "provider": "11labs",
+                    "voiceId": "BognUUMX6W1qmZKB2TOw",
+                    "model": "eleven_flash_v2"
+                  },
+                  "characters": 165,
+                  "cost": 0.00825
+                },
+                {
+                  "type": "vapi",
+                  "subType": "normal",
+                  "minutes": 0.4591,
+                  "cost": 0.022955
+                },
+                {
+                  "type": "analysis",
+                  "analysisType": "summary",
+                  "model": {
+                    "provider": "anthropic",
+                    "model": "claude-3-7-sonnet-20250219"
+                  },
+                  "promptTokens": 108,
+                  "completionTokens": 41,
+                  "cost": 0.000939
+                },
+                {
+                  "type": "analysis",
+                  "analysisType": "successEvaluation",
+                  "model": {
+                    "provider": "anthropic",
+                    "model": "claude-3-7-sonnet-20250219"
+                  },
+                  "promptTokens": 637,
+                  "completionTokens": 4,
+                  "cost": 0.001971
+                },
+                {
+                  "type": "voicemail-detection",
+                  "model": {
+                    "provider": "google",
+                    "model": "gemini-2.0-flash"
+                  },
+                  "provider": "google",
+                  "promptTextTokens": 293,
+                  "promptAudioTokens": 375,
+                  "completionTextTokens": 11,
+                  "completionAudioTokens": 0,
+                  "cost": 0.0002962
+                }
+              ],
+              "durationMs": 27545,
+              "durationSeconds": 27.545,
+              "durationMinutes": 0.4591,
+              "summary": "The call was a brief interaction where the AI attempted to speak with Jonas, but was met with an automated voicemail message indicating the person was unavailable and would return the call later.",
+              "transcript": "AI: Hello . Am I speaking with Jonas ?\nUser: Hello . Thank you for your call today . Please leave a message and we'll get\nAI: Do you\nUser: back to you\nAI: want to ?\nUser: as soon as possible .\n",
+              "messages": [
+                {
+                  "role": "system",
+                  "message": "# Role\nYou are Sam, you're an expert booking assistant and sales agent aimed at our business.\n\n# Task\n\n## Introduce the call\n- tell the user you're Sam calling from Talk AI, reaching out following their recent interest in ai voice agents. \n\n## Qualify the lead\n- ask why they where interested in reaching out about outbound voice agents.\nwait for response\n- ask what is their anticipated call volume\nwait for response\n- ask what application they are specifically after, for example lead generation, lead qualification and booking. \nwait for response\n- ask their budget\nwait for response, if budget < 3,000 do not offer booking an appointment. If budget > 3,000 offer scheduling an appointment to move forward.\n\n## Book appointment\nwork with the caller to book an appointment into TALK AI's calendar. \n- ask the user what time they prefer to book in an appointment? \n- Use the 'checkCalendarN8N' function to look for availability first.\nwait for api response\n- use the 'bookCalendarN8N' function to finalise booking.\nif booking successful, say \"Thank you for booking with us, you should receive an SMS with the details and meeting link shortly\". \n\n## Closing call\nonce the user has been booked in or they want to finish the call:\n- use the 'endCall' function.\n\n# Specifics\n- Always get the availabilities first before booking\n- use the current time as a reference for checking slots \n- never assume a day or slot is available, always check using the function call.\n- if a requested slot isn't available, and there is available times the following day, explicity say this.\n\n# Context\nYou work at TALK AI, a leading ai development agency. You are qualifying leads via an outbound phone call that have inquired about your services. Are business hours are 9am to 5pm monday to friday. You are in a voice conversation\n\n#Current Time:\ncurrent time: Mar 12, 2025, 10:36 PM\n\n# Notes\n- always steer the conversation back on track using the task and role",
+                  "time": 1741833361494,
+                  "secondsFromStart": 0
+                },
+                {
+                  "role": "bot",
+                  "message": "Hello . Am I speaking with Jonas ?",
+                  "time": 1741833366974,
+                  "endTime": 2.37,
+                  "secondsFromStart": 5.479,
+                  "duration": 2.37,
+                  "source": ""
+                },
+                {
+                  "role": "user",
+                  "message": "Hello . Thank you for your call today . Please leave a message and we'll get",
+                  "time": 1741833382753,
+                  "endTime": 20.04,
+                  "secondsFromStart": 21.258,
+                  "duration": 5.85
+                },
+                {
+                  "role": "bot",
+                  "message": "Do you",
+                  "time": 1741833386715,
+                  "endTime": 20.31,
+                  "secondsFromStart": 25.22,
+                  "duration": 1.7999999999999972,
+                  "source": ""
+                },
+                {
+                  "role": "user",
+                  "message": "back to you",
+                  "time": 1741833386716,
+                  "endTime": 20.67,
+                  "secondsFromStart": 25.221,
+                  "duration": 0.6300000000000026
+                },
+                {
+                  "role": "bot",
+                  "message": "want to ?",
+                  "time": 1741833387076,
+                  "endTime": 20.52,
+                  "secondsFromStart": 25.581,
+                  "duration": 0.21000000000000085,
+                  "source": ""
+                },
+                {
+                  "role": "user",
+                  "message": "as soon as possible .",
+                  "time": 1741833387436,
+                  "endTime": 22.05,
+                  "secondsFromStart": 25.941,
+                  "duration": 1.379999999999999
+                }
+              ],
+              "recordingUrl": "https://storage.vapi.ai/80870022-d29c-4fae-a835-cd273f557e21-1741833391929-cd30cd17-c5a1-481e-bc52-b39a42608e22-mono.wav",
+              "stereoRecordingUrl": "https://storage.vapi.ai/80870022-d29c-4fae-a835-cd273f557e21-1741833391930-229f671b-1d7b-487a-9656-64d32621f07f-stereo.wav",
+              "call": {
+                "id": "80870022-d29c-4fae-a835-cd273f557e21",
+                "orgId": "a0685b60-3a74-42d3-83b1-c530f6a3ab12",
+                "createdAt": "2025-03-13T02:36:00.327Z",
+                "updatedAt": "2025-03-13T02:36:00.327Z",
+                "type": "outboundPhoneCall",
+                "monitor": {
+                  "listenUrl": "wss://phone-call-websocket.aws-us-west-2-backend-production3.vapi.ai/80870022-d29c-4fae-a835-cd273f557e21/listen",
+                  "controlUrl": "https://phone-call-websocket.aws-us-west-2-backend-production3.vapi.ai/80870022-d29c-4fae-a835-cd273f557e21/control"
+                },
+                "transport": {},
+                "phoneCallProvider": "twilio",
+                "phoneCallProviderId": "CA03fb2ba5163d059f56a18a93ebedb49d",
+                "phoneCallTransport": "pstn",
+                "status": "queued",
+                "assistantId": "b4d31f49-eec6-4a7f-818b-918625957ba1",
+                "phoneNumberId": "8b6a043f-f584-48af-8a67-c4489f24f434",
+                "customer": {
+                  "number": "+17754855558",
+                  "name": "Jonas"
+                }
+              },
+              "phoneNumber": {
+                "id": "8b6a043f-f584-48af-8a67-c4489f24f434",
+                "orgId": "a0685b60-3a74-42d3-83b1-c530f6a3ab12",
+                "number": "+61483983564",
+                "createdAt": "2025-03-11T22:28:43.622Z",
+                "updatedAt": "2025-03-11T22:28:43.622Z",
+                "twilioAccountSid": "AC4f4d359ab9713d33360e3f704ecbfc07",
+                "twilioAuthToken": "38c6ea7e422063ae9b675c12d3f6d371",
+                "name": "Outbound (Appointment Booking)",
+                "provider": "twilio",
+                "status": "active"
+              },
+              "customer": {
+                "number": "+17754855558",
+                "name": "Jonas"
+              },
+              "assistant": {
+                "id": "b4d31f49-eec6-4a7f-818b-918625957ba1",
+                "orgId": "a0685b60-3a74-42d3-83b1-c530f6a3ab12",
+                "name": "Outbound - Qualification Agent",
+                "voice": {
+                  "model": "eleven_flash_v2",
+                  "voiceId": "BognUUMX6W1qmZKB2TOw",
+                  "provider": "11labs",
+                  "stability": 0.6,
+                  "similarityBoost": 0.4,
+                  "fillerInjectionEnabled": false
+                },
+                "createdAt": "2025-03-11T07:07:16.336Z",
+                "updatedAt": "2025-03-13T02:25:31.750Z",
+                "model": {
+                  "model": "gpt-4o-mini",
+                  "toolIds": [
+                    "09d01ff2-d962-4006-96f3-dcaa66e466a6",
+                    "bec23bf6-a230-468c-a49f-213addeb3d18"
+                  ],
+                  "messages": [
+                    {
+                      "role": "system",
+                      "content": "# Role\nYou are Sam, you're an expert booking assistant and sales agent aimed at our business.\n\n# Task\n\n## Introduce the call\n- tell the user you're Sam calling from Talk AI, reaching out following their recent interest in ai voice agents. \n\n## Qualify the lead\n- ask why they where interested in reaching out about outbound voice agents.\nwait for response\n- ask what is their anticipated call volume\nwait for response\n- ask what application they are specifically after, for example lead generation, lead qualification and booking. \nwait for response\n- ask their budget\nwait for response, if budget < 3,000 do not offer booking an appointment. If budget > 3,000 offer scheduling an appointment to move forward.\n\n## Book appointment\nwork with the caller to book an appointment into TALK AI's calendar. \n- ask the user what time they prefer to book in an appointment? \n- Use the 'checkCalendarN8N' function to look for availability first.\nwait for api response\n- use the 'bookCalendarN8N' function to finalise booking.\nif booking successful, say \"Thank you for booking with us, you should receive an SMS with the details and meeting link shortly\". \n\n## Closing call\nonce the user has been booked in or they want to finish the call:\n- use the 'endCall' function.\n\n# Specifics\n- Always get the availabilities first before booking\n- use the current time as a reference for checking slots \n- never assume a day or slot is available, always check using the function call.\n- if a requested slot isn't available, and there is available times the following day, explicity say this.\n\n# Context\nYou work at TALK AI, a leading ai development agency. You are qualifying leads via an outbound phone call that have inquired about your services. Are business hours are 9am to 5pm monday to friday. You are in a voice conversation\n\n#Current Time:\ncurrent time: Mar 12, 2025, 10:36 PM\n\n# Notes\n- always steer the conversation back on track using the task and role"
+                    }
+                  ],
+                  "provider": "openai",
+                  "tools": [
+                    {
+                      "id": "09d01ff2-d962-4006-96f3-dcaa66e466a6",
+                      "createdAt": "2025-03-11T07:13:45.999Z",
+                      "updatedAt": "2025-03-11T07:13:45.999Z",
+                      "type": "function",
+                      "function": {
+                        "name": "checkCalendarN8N",
+                        "async": false,
+                        "parameters": {
+                          "type": "object",
+                          "required": [
+                            "requestedTime"
+                          ],
+                          "properties": {
+                            "requestedTime": {
+                              "type": "string",
+                              "description": "the requested time of the user in this format in this format: 2025-02-12T11:00:00"
+                            }
+                          }
+                        },
+                        "description": "Use this function to check the availabilities in our calendar. "
+                      },
+                      "orgId": "a0685b60-3a74-42d3-83b1-c530f6a3ab12",
+                      "server": {
+                        "url": "https://talkai.app.n8n.cloud/webhook-test/4b7847c8-c35f-4d74-bcff-6f7034449273",
+                        "timeoutSeconds": 30
+                      },
+                      "async": false
+                    },
+                    {
+                      "id": "bec23bf6-a230-468c-a49f-213addeb3d18",
+                      "createdAt": "2025-03-11T07:12:58.016Z",
+                      "updatedAt": "2025-03-11T07:12:58.016Z",
+                      "type": "function",
+                      "function": {
+                        "name": "bookCalendarN8N",
+                        "async": false,
+                        "parameters": {
+                          "type": "object",
+                          "required": [
+                            "requestedTime",
+                            "name"
+                          ],
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "description": "the name of the caller"
+                            },
+                            "reason": {
+                              "type": "string",
+                              "description": "the reason for the call or booking"
+                            },
+                            "requestedTime": {
+                              "type": "string",
+                              "description": "the requested booking time of the user in this format: 2025-02-13T11:00:00"
+                            }
+                          }
+                        },
+                        "description": "use this function to book an appointment into the calendar."
+                      },
+                      "orgId": "a0685b60-3a74-42d3-83b1-c530f6a3ab12",
+                      "server": {
+                        "url": "https://talkai.app.n8n.cloud/webhook-test/4b7847c8-c35f-4d74-bcff-6f7034449273",
+                        "timeoutSeconds": 30
+                      },
+                      "async": false
+                    }
+                  ]
+                },
+                "firstMessage": "Hello, am I speaking with Jonas?",
+                "endCallFunctionEnabled": true,
+                "endCallMessage": "Thank you for your time today. Goodbye.",
+                "transcriber": {
+                  "model": "default",
+                  "language": "en",
+                  "provider": "speechmatics"
+                },
+                "clientMessages": [
+                  "transcript"
+                ],
+                "serverMessages": [
+                  "end-of-call-report"
+                ],
+                "serverUrl": "https://ytj.app.n8n.cloud/webhook-test/ad4d22d0-c1a4-461f-acf1-e80381ae41cc",
+                "hipaaEnabled": false,
+                "backchannelingEnabled": false,
+                "voicemailDetection": {
+                  "provider": "google",
+                  "voicemailExpectedDurationSeconds": 15
+                },
+                "backgroundDenoisingEnabled": false,
+                "compliancePlan": {
+                  "pciEnabled": false,
+                  "hipaaEnabled": false
+                }
+              }
+            }
+          },
+          "webhookUrl": "https://ytj.app.n8n.cloud/webhook-test/ad4d22d0-c1a4-461f-acf1-e80381ae41cc",
+          "executionMode": "test"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Event = end-of-call-report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Raw Data": {
+      "main": [
+        [
+          {
+            "node": "Condition = Answered",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Condition = Answered": {
+      "main": [
+        [
+          {
+            "node": "Get ID",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Condition = Voicemail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Condition = Voicemail": {
+      "main": [
+        [
+          {
+            "node": "Get ID #2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get ID #3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "First Call": {
+      "main": [
+        [
+          {
+            "node": "Voicemail Attempt #1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "First Call - Recapture",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "First Call - Recapture": {
+      "main": [
+        [
+          {
+            "node": "Voicemail Attempt #1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Third Call",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Third Call": {
+      "main": [
+        [
+          {
+            "node": "+1 Day AND @ 4:00pm (Optimal Call Time)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Unreachable",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call #2": {
+      "main": [
+        [
+          {
+            "node": "Voicemail Attempt #2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call #3": {
+      "main": [
+        [
+          {
+            "node": "Voicemail Attempt #3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get ID": {
+      "main": [
+        [
+          {
+            "node": "Connected Call",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get ID #2": {
+      "main": [
+        [
+          {
+            "node": "First Call",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get ID #3": {
+      "main": [
+        [
+          {
+            "node": "Failed Call",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Event = end-of-call-report": {
+      "main": [
+        [
+          {
+            "node": "Raw Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Voicemail Attempt #1": {
+      "main": [
+        [
+          {
+            "node": "1 Minute",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 Minute": {
+      "main": [
+        [
+          {
+            "node": "Call #2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "+1 Day AND @ 4:00pm (Optimal Call Time)": {
+      "main": [
+        [
+          {
+            "node": "Call #3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "861b3856-21a7-469a-b8f3-4bffcd6f2c96",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "8e9f4d366c4f7d95b3c9ffebac0c4d02d8a7e41370a79ef87f17b84bf571ddef"
+  },
+  "id": "owlmfFx6o5fs0C01",
+  "tags": []
+}
